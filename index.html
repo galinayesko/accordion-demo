@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Accordion Menu</title>
+</head>
+<body>
+    <!--Main Container-->
+    <div class="flex flex-col items-center justify-center px-64 py-30 min-h-screen">
+        <!--Small Container-->
+        <div class="flex flex-col items-center-justify-between px-5 py-4">
+            <div class="accordion">
+                <!--Accordion 1-->
+                <div class="accordion-item border border-gray-800">
+                    <h2 class="accordion-header mb-0">
+                        <button onclick="ac()" class="accordion-button relative flex items-center w-full py-2 px-3 text-gray-800 text-left" type="button">Accordion Item 1 &nbsp;&nbsp;&nbsp;&nbsp; + </button>
+                    </h2>
+                    <div class="hidden accordion-collapse1" id="acik1">
+                        <div class="accordion-body text-gray-800 py-2 px-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </div>
+                    </div>
+                </div>
+                <!--Accordion 2-->
+                <div class="accordion-item border border-gray-800">
+                    <h2 class="accordion-header mb-0">
+                        <button onclick="ac2()" class="accordion-button relative flex items-center w-full py-2 px-3 text-gray-800 text-left outline-none" type="button">Accordion Item 2 &nbsp;&nbsp;&nbsp;&nbsp; +  </button>
+                    </h2>
+                    <div class="hidden accordion-collapse" id="acik2">
+                        <div class="accordion-body text-gray-800 py-2 px-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </div>
+                    </div>
+                </div>
+                <!--Accordion 3-->
+                <div class="accordion-item border border-gray-800">
+                    <h2 class="accordion-header mb-0">
+                        <button onclick="ac3()" class="accordion-button relative flex items-center w-full py-2 px-3 text-gray-800 text-left" type="button">Accordion Item 3 &nbsp;&nbsp;&nbsp;&nbsp; +  </button>
+                    </h2>
+                    <div class="hidden accordion-collapse" id="acik3">
+                        <div class="accordion-body text-gray-800 py-2 px-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
